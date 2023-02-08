@@ -1,0 +1,97 @@
+<DOCTYPE! HTML>
+<HTML>
+    <head>
+        <title>
+            Registration form
+        </title>
+    </head>
+    <style>
+        body{
+            background: linear-gradient(135deg,#5ba4ce,#a06bdd);
+            font-family:'Segoe UI', Tahoma;
+        }
+
+        main{
+            background-color: azure;
+            width: 500px;
+            height: auto;
+            margin: 10% auto;
+            border-radius: 4px;
+        }
+
+        table{
+            width: 95%;
+            margin:15px ;
+        }
+
+        .inputbox{
+            border-width: 0px 0px 1px 0px;
+        }
+
+        #submit{
+            background: linear-gradient(90deg,#5ba4ce,#a06bdd);
+            color:azure;
+            font-weight: bold;
+            font-size: medium;
+            width: 100%;
+            margin: 20px 100px 20px 100px;
+            padding: 5px 0px 5px 0px;
+            border-style: none;
+            border-radius: 4px;
+        }
+    </style>
+    <body>
+        <main>
+            <form action="Registration_result.html">
+                <table cellspacing="5">
+                    <tr>
+                        <td>
+                            <h2>Registration</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="fullName"><b>Full Name</b></label></td>
+                        <td><label for="userName"><b>Username</b></label></td>
+                    </tr>
+                    <tr>
+                        <td><input class="inputbox" id="fullName" type="text" name="fullName" placeholder="Enter your name" required></td>
+                        <td><input class="inputbox" id="username" type="text" name="userName" placeholder="Enter your username" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="em"><b>Email</b></label></td>
+                        <td><label for="pNumber"><b>Phone Number</b></label></td>
+                    </tr>
+                    <tr>
+                        <td><input class="inputbox" id="em" type="email" name="mail" placeholder="Enter your email" required></td>
+                        <td><input class="inputbox" id="pNumber" type="tel" name="phoneNumber" placeholder="Enter your number" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pwd"><b>Password</b></label></td>
+                        <td><label for="cpwd"><b>Confirm Password</b></label></td>
+                    </tr>
+                    <tr>
+                        <td><input class="inputbox" id="pwd" type="password" name="password" placeholder="Enter your password" required></td>
+                        <td><input class="inputbox" id="cpwd" type="password" name="ConfirmPwd" placeholder="Confirm your password" required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Gender</b>
+                            <br>
+                            <input id="male" type="radio" name="gender" required>
+                            <label for="male">Male</label>
+                            <input id="female" type="radio" name="gender">
+                            <label for="female">Female</label>
+                            <input id="pref" type="radio" name="gender">
+                            <label for="pref">Prefer not to say</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="submit" type="submit" value="Register">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </main>
+    </body>
+</HTML>
