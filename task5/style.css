@@ -1,0 +1,138 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    background-color: rgb(226, 226, 226);
+}
+
+#navbar {
+    background-color: rgb(39, 39, 39);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#list {
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+}
+
+a {
+    text-decoration-style: dashed;
+    text-decoration-thickness: 3px;
+    color:rgb(39, 39, 39)
+}
+
+.link {
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(226, 226, 226);
+}
+
+#abtMe {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#intro {
+    flex-basis: 40%;
+}
+
+#intro h1{
+    font-size: 5em;
+}
+
+#photoMe {
+    width: 350px;
+    height: 350px;
+    border-style: dashed;
+    border-radius: 50%;
+    flex-basis: 45%;
+}
+
+#ProjectsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#Projects {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.projectImg {
+    width: 80%;
+    height: 60%;
+    border-style: dashed;
+    border-radius: 2%;
+}
+
+#ContactMe {
+    height: 80vh;
+}
+
+#f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    height: 20px;
+    border-style: dashed;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#msg {
+    resize: none;
+    border-style: dashed;
+    border-width: 2px;
+}
+
+#sub {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    width: 10em;
+    height: 3em;
+    border-color: grey;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px)  {
+    
+    #abtMe {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    #ContactMe {
+        height: auto;
+        margin-top: 200px;
+    }
+
+    #ProjectsSection {
+        height: auto;
+    }
+
+    #Projects {
+        flex-wrap: wrap;
+    }
+  }
