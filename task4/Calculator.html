@@ -1,0 +1,48 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<title>Calculator</title>
+		<link rel="stylesheet" href="CalculatorStyle.css">
+	</head>
+	<script src="CalculatorScript.js">
+	</script>
+	<body>
+			<div id="main">
+				<form>
+					<div id="head">
+						<input id="result" type="text">
+					</div>
+					<div class="row">
+						<input class="button" type="button">
+						<input class="button" type="button">
+						<input id="cButton" class="button" type="button" value="C" onclick="erase()">
+						<input class="button" type="button" value="/" onclick="disp(value)">
+					</div>
+					<div class="row">
+						<input class="button" type="button" value="7" onclick="disp(value)">
+						<input class="button" type="button" value="8" onclick="disp(value)">
+						<input class="button" type="button" value="9" onclick="disp(value)">
+						<input class="button" type="button" value="*" onclick="disp(value)">
+					</div>
+					<div class="row">
+						<input class="button" type="button" value="4" onclick="disp(value)">
+						<input class="button" type="button" value="5" onclick="disp(value)">
+						<input class="button" type="button" value="6" onclick="disp(value)">
+						<input class="button" type="button" value="-" onclick="disp(value)">
+					</div>
+					<div class="row">
+						<input class="button" type="button" value="1" onclick="disp(value)">
+						<input class="button" type="button" value="2" onclick="disp(value)">
+						<input class="button" type="button" value="3" onclick="disp(value)">
+						<input class="button" type="button" value="+" onclick="disp(value)">
+					</div>
+					<div class="row">
+						<input class="button" type="button">
+						<input class="button" type="button" value="0" onclick="disp(value)">
+						<input class="button" type="button" value="." onclick="disp(value)">
+						<input id="eqButton" class="button" type="button" value="=" onclick="equal()">
+					</div>
+				</form>
+			</div>
+	</body>
+</html>
