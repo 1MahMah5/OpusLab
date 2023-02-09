@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <ul id="list">
+      <li>
+        <a class="link" href="#abtMe">About me</a>
+      </li>
+      <li>
+        <a class="link" href="#ProjectsSection">Projects</a>
+      </li>
+      <li>
+        <a class="link" href="#ContactMe">Contact Me</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <section id="abtMe">
+      <div id="intro">
+        <h1>Hi, I'm Mahran</h1>
+        <p>I am a 20 years old computer science student at <a href="http://www.isa2m.rnu.tn/"
+            target="_blank">ISAMM</a>.<br>I'm a beginner web developer and I am looking forward to learn more
+          about this field, expand my knowledge and improve my skills.
+        </p>
+      </div>
+      <div>
+        <img id="photoMe" src="FB_20200229_164400_645.jpg" alt="personal photo">
+      </div>
+    </section>
+    <section id="ProjectsSection">
+      <h1>Projects</h1>
+      <div id="Projects">
+        <div class="project">
+          <h3>Registration Form</h3>
+          <img class="projectImg" src="registration form.jpg" alt="project1 pic">
+          <a href="https://github.com/1MahMah5/registration-form-using-only-html-and-css" target="_blank">see more
+            details</a>
+        </div>
+        <div class="project">
+          <h3>News Page</h3>
+          <img class="projectImg" src="newsPage.jpg" alt="project2 pic">
+          <a href="https://github.com/1MahMah5/flexbox-grid_interface.git" target="_blank">see more details</a>
+        </div>
+        <div class="project">
+          <h3>Javascript Calculator</h3>
+          <img class="projectImg" src="JSCalculator.jpg" alt="project3 pic">
+          <a href="https://github.com/1MahMah5/Calculator.git" target="_blank">see more details</a>
+        </div>
+      </div>
+    </section>
+    <section id="ContactMe">
+      <form id="f" onsubmit="sendEmail(); reset(); return false;">
+        <h1>Contact me</h1>
+        <label for="name">
+          <h3>Name</h3>
+        </label>
+        <input id="name" type="text" size="28" placeholder="Enter your name" required>
+        <label for="Email">
+          <h3>Email</h3>
+        </label>
+        <input id="Email" type="email" size="28" placeholder="Enter your email address" required>
+        <label for="msg">
+          <h3>Message</h3>
+        </label>
+        <textarea id="msg" rows="10" cols="30" placeholder="Enter your message" required></textarea>
+        <br>
+        <input id="sub" type="submit">
+      </form>
+    </section>
+  </main>
+</body>
+  
+</html>
