@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task3Doc</title>
+    </head>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap:10px
+        }
+
+        #pagename{
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        #links_list{
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        button{
+            background-color: rgb(192, 94, 67);
+            color:aliceblue;
+            border-style: none;
+            border-radius: 4px;
+            height: 25px; 
+        }
+
+        #main_div{
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: auto auto;
+			grid-template-rows: 250px 200px 100px;
+            grid-template-areas: 
+			"pic1 art1"
+			"pic2 pic3"
+            "art2 art3";
+        }
+        
+        img{
+            width: 500px;
+            height: 200px;
+            border-radius: 4px;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div>
+                <h2 id="pagename">Pixelmatters</h2>
+            </div>
+            <div class="container">
+                <ul id="links_list">
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Approach</a></li>
+                    <li><a href="#">Culture</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+                <button type="button">Get in touch</button>
+            </div>
+        </div>
+        <div id="main_div">
+            <img id="pic1" src="102322218-social-media-california.1910x1000.jpg" alt="selfie of 2ppl with san francisco bridge behind them">
+            <div class="art">
+                <span>PRODUCT . July 24,2020</span>
+                <h2>Interview - What it's like to work remotely in big sized product development?</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repellat quidem illo eum mollitia vitae reiciendis perspiciatis laborum natus soluta consequatur aliquid porro et ad nam facere, ratione dolor odio!</p>
+            </div>
+            <img id="pic2" src="native-vs-hybrid-app-comparison.jpg" alt="native-vs-hybrid-app">
+            <img id="pic3" src="site-Wordpress.jpg" alt="wordpress image">
+            <div id="art2" class="art">
+                <span>DEVELOPMENT . July 2,2020</span>
+                <h2>Hybrid vs Native - Here is how you can choose one over the other...</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repellat quidem illo eum mollitia vitae reiciendis perspiciatis laborum natus soluta consequatur aliquid porro et ad nam facere, ratione dolor odio!</p>
+            </div>
+            <div id="art3" class="art">
+                <span>DEVELOPMENT . July 2,2020</span>
+                <h2>From monolithic to headless:how and why you should adapt your WordPress stack</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repellat quidem illo eum mollitia vitae reiciendis perspiciatis laborum natus soluta consequatur aliquid porro et ad nam facere, ratione dolor odio!</p>
+            </div>
+        </div>
+    </body>
+</html>
