@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="stylesToDoListPage.css">
+</head>
+
+<body>
+    <div id="header-div">
+        <h1>What are you going to plan ?</h1>
+        <button id="addBtn" type="button" onclick="addToDoFormPopUp()">Add ToDo</button>
+    </div>
+    <div id="ToDoList">
+    </div>
+    <div id="formContainer">
+        <form>
+            <button id="closeB" type="button" onclick="closeFormPopUp()">X</button>
+            <h2>Add a new ToDo</h2>
+            <input id="title" type="text" placeholder="Enter your toDo's title">
+            <input id="ddl" type="date" placeholder="Enter the deadline of your toDo">
+            <textarea id="desc" rows="4" placeholder="Enter your toDo's description"></textarea>
+            <button id="submitB" type="button" onclick="addToDo()">Add and save</button>
+        </form>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
